@@ -1,10 +1,16 @@
-﻿namespace LLL
+﻿using LLL;
+
+namespace Lab2
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            inp_out inp = new();
+
+            List<Tuple<string, string>> data = inp.input_d();
+
+            Console.WriteLine("Производится расчёт");
         }
     }
 }
